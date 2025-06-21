@@ -1,11 +1,11 @@
 @echo off
-cd /d %~dp0  # 切换到批处理文件所在目录
-echo 当前目录: %cd%
+cd /d %~dp0
+echo Current directory: %cd%
 
 if exist .git (
-    echo 找到 Git 仓库
+    echo Git repository found
 ) else (
-    echo 错误: 当前目录不是 Git 仓库!
+    echo Error: Not a Git repository!
     pause
     exit /b 1
 )
