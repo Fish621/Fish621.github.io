@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- 网站标题和描述（从 _config.yml 读取） -->
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  
+  <!-- 引入 CSS（Jekyll 主题默认样式） -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  
+  <!-- 引入网站图标（如果有的话） -->
+  <link rel="icon" href="{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon">
+  
+  <!-- SEO 标签（需要 jekyll-seo-tag 插件） -->
+  {% seo %}
+</head>
